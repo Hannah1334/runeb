@@ -1,0 +1,393 @@
+<style>
+body{
+background-image: url('') !important; 
+background-repeat:repeat !important; 
+background-position:center !important; 
+background-size:contain;
+background-color:#e6d3cc;
+}
+::-webkit-scrollbar {width: 5px; height: 5px;}
+::-webkit-scrollbar-track {background: none;}
+::-webkit-scrollbar-thumb {background: #e6d3cc;}
+#line1 {
+position:absolute;
+background-color:#ffffff;
+width:0.2%;
+height:100%;
+left:25%;
+top:0%;
+}
+#line2 {
+position:absolute;
+background-color:#ffffff;
+width:100%;
+height:0.35%;
+left:0%;
+top:23%;
+}
+#line3 {
+position:absolute;
+background-color:#ffffff;
+width:100%;
+height:0.45%;
+left:0%;
+top:77%;
+}
+#title {
+position:absolute;
+width:25%;
+height:10%;
+top:13%;
+left:75%;
+text-align:center;
+font-size:500%;
+font-color:#ffffff;
+font-family:Unica One;
+}
+#picbox {
+position:absolute;
+border:1px solid #ffffff;
+width:20%;
+height:50%;
+top:25%;
+left:15%;
+background-image: url('https://i.imgur.com/eD79iMk.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+}
+#content {
+position:absolute;
+overflow:auto;
+border:1px solid #ffffff;
+background-color:#f5e1da;
+padding:2%;
+width:35%;
+height:41.7%;
+top:25%;
+left:45%;
+color:#000000;
+font-family:Amaranth;
+font-size:80%;
+}
+#tabbox1 {
+position:absolute;
+border:1px solid #ffffff;
+border-radius:100%;
+width:3.75%;
+height:7.5%;
+left:38%;
+top:24.5%;
+background-image: url('https://i.imgur.com/Ybw0HBr.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+}
+#tabbox2 {
+position:absolute;
+border:1px solid #ffffff;
+border-radius:100%;
+width:3.75%;
+height:7.5%;
+left:38%;
+top:33%;
+background-image: url('https://i.imgur.com/4aAVGzz.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+}
+#tabbox3 {
+position:absolute;
+border:1px solid #ffffff;
+border-radius:100%;
+width:3.75%;
+height:7.5%;
+left:38%;
+top:41.5%;
+background-image: url('https://i.imgur.com/bhjNhsH.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+}
+#tabbox4 {
+position:absolute;
+border:1px solid #ffffff;
+border-radius:100%;
+width:3.75%;
+height:7.5%;
+left:38%;
+top:50%;
+background-image: url('https://i.imgur.com/IuP8mdP.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+}
+#tabbox5 {
+position:absolute;
+border:1px solid #ffffff;
+border-radius:100%;
+width:3.75%;
+height:7.5%;
+left:38%;
+top:58.5%;
+background-image: url('https://i.imgur.com/miQVYmY.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+}
+#tabbox6 {
+position:absolute;
+border:1px solid #ffffff;
+border-radius:100%;
+width:3.75%;
+height:7.5%;
+left:38%;
+top:67%;
+background-image: url('https://i.imgur.com/JbjlFpm.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+}
+.tabs{
+display:block;
+border-radius:100%;
+opacity:0;
+padding:2%;
+width:96%;
+height:96%;
+text-align:center;
+color:#ffffff;
+font-family:Amaranth;
+font-size:100%;
+background-color:#222222;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+.tabs:hover {
+opacity:1;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+#tab1,#tab2,#tab3,#tab4,#tab5,#tab6,#tab7,#tab8,#tab9,#tab10,#tab11,#tab12 {
+display: none;
+}
+i {
+color:#cf3a3a;
+font-size:100%;
+}
+a {
+color:#cf3a3a;
+}
+h1 {
+color: #444444;
+letter-spacing:3px;
+font-family: Unica One;
+text-align:center;
+font-size: 90%;
+}
+b {
+font-size: 80%;
+color:#cf3a3a;
+font-family:Unica One;
+}
+</style>
+
+<style type="text/css">body, a:hover {cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur817.cur), progress !important;}</style>
+<link href="https://fonts.googleapis.com/css?family=Amaranth|Unica+One" rel="stylesheet">
+<script>function changeNavigation(id) {document.getElementById('content').innerHTML=document.getElementById(id).innerHTML}</script>
+<script>function changeNavigation1(id) {document.getElementById('picbox').innerHTML=document.getElementById(id).innerHTML}</script>
+
+<div id="line1">
+</div>
+<div id="line2">
+</div>
+<div id="line3">
+</div>
+<div id="picbox">
+</div>
+<div id="content">
+<h1>Basic Information</h1>
+<b>Name:</b> Rune<br>
+<b>True Age:</b> Immortal<br>
+<b>Physical Age:</b> Late Twenties<br>
+<b>Gender:</b> Female<br>
+<b>Species:</b> Tree Guardian<br>
+<b>Race:</b> Scribe<br>
+<b>Occupation:</b> Student at <a target="_blank" href="http://ulreich.weebly.com">Ulreich University</a><br>
+<b>Magic Tree:</b> Ritualism<br>
+<b>Tree Rank:</b> True Practitioner<br>
+<b>Height:</b> 5'7"<br>
+<b>Weight:</b> 130 lbs.<br><br>
+<h1>Detailed Information</h1>
+<b>Physical Attributes</b><br>
+Rune has a very specific <i>body type</i>. She's pretty average in height when compared to human females. Her skin always carries a nice olive tanned tint, revealing her Spanish "heritage." While she is thin and definitely feminine in shape (hourglass figure, defined bust and rear, etc.) layers of hard muscle underline her smooth skin, giving her dainty feminine look a more tough and weathered appearance. Her <i>facial structure</i> is just as specific as her body type. Her head is oval shaped, and her chin sharp and defined. High cheekbones are evident but not overly pronounced, giving her rounded rosy cheeks a softer look. Her nose is average in size and shape while the lips that rest underneath are full and as rosy as her cheeks. Thin black brows and thick black lashes accent wide narrow eyes, which would look pretty humanistic if it wasn't for the unaturally cyan hue of her irises and strange pupils--which are there but aren't visible. Her <i>hair</i> is yet another subject that demands attention. While it is obvious she hasn't had a haircut in ages based around the length of her hair and its varying lengths in different areas, the hair from her scalp to her shoulders is a dark raven black, anything that has grown beyond that is a rosy red. Well, mostly red, save for the odd streaks of black that cut through it. No, not common streaks, these black strands go in every direction possible: sideways, diagnol, straight, etc. Should she decide to style her hair, put it up, whatever, the black streaks will form actual runes. Her hair is all natural, she didn't color it this way.
+<br><br>
+<b>Attire</b><br>
+Her <i>clothing will vary</i>  based on what culture she is currently in. As a representer for the Scribes, it is in her duty to know the culture of a place and the generally accepted customs of clothing so she will not offend. The clothing shown in provided images is usually only worn if she is home among other Scribes.
+<br><br>
+<b>Personality</b><br>
+All her life, Rune has had to be a politician, and even more so an actress. While her true nature is yet to be seen, it is clearly easy for her to study her surroundings and adapt her personality entirely to fit how she wants to be seen. Should she be backed into a corner or feel an overwhelming amount of pressure, there is a high chance she'll snap and reveal her true nature; a trained weapon waiting to be used to its full potential.
+</div>
+
+<div id="tabbox1">
+<span class="tabs" onClick="changeNavigation ('tab1');changeNavigation1 ('tab2')">1</span>
+</div>
+<div id="tabbox2">
+<span class="tabs" onClick="changeNavigation ('tab3');changeNavigation1 ('tab4')">2</span>
+</div>
+<div id="tabbox3">
+<span class="tabs" onClick="changeNavigation ('tab5');changeNavigation1 ('tab6')">3</span>
+</div>
+<div id="tabbox4">
+<span class="tabs" onClick="changeNavigation ('tab7');changeNavigation1 ('tab8')">4</span>
+</div>
+<div id="tabbox5">
+<span class="tabs" onClick="changeNavigation ('tab9');changeNavigation1 ('tab10')">5</span>
+</div>
+<div id="tabbox6">
+<span class="tabs" onClick="changeNavigation ('tab11');changeNavigation1 ('tab12')">6</span>
+</div>
+
+<div id="title">
+The Scribe
+</div>
+
+<div id="tab1">
+<h1>History & Lore</h1>
+In the beginning when humans first began roaming the Earth, their gods banded together and agreed to make special trees with magical properties and spread them throughout the lands in hidden places so humans would have to undergo trials to find them. It didn't take long for human Tribes and Families to find these trees and occupy the surrounding lands, thankful to the gods for giving them such special gifts.
+<br><br>
+Each tree came with specific instructions of use and care, otherwise they would cause great damage to both the humans and their own lands. For quite some time the humans kept peace with the gods and used the trees as instructed. Unfortunately, greed, the lust for power, and the lust for knowledge drove them to disobey the instructions of their gods. They began to misuse the trees for their own selfish gain.
+<br><br>
+Angered, the gods warned the humans that if they would not stop, they would be forced to stop. The humans, of course, did not believe. So the gods created Guardians out of the sap of each Magic Tree. The Guardians were powerful formiddable foes that stood between the humans and their abused gifts. Spiteful, the humans declared War on these Guardians and tried to kill them off. The Tree Guardians formed the Tree Alliance and worked together to win the War, hiding their trees from human eyes and banishing human blood from their soil forever.
+<br><br>
+Of all these Trees, Ritualism birthed one of the most progressive groups. This offspring was closest to the humans in appearance, and farthest in nature. They called themselves Scribes; readers and writers of an ancient magic language, and were very proud of their duty. While the first generation was born with a subconscious knowledge of how to fabricate runes that they were able to tap into with time, it was their job to pass on the knowledge to their descendants. The first generation was bred for war, the later generations were bred for studying, making philosophers, writers, and inventors.<br><br>
+Rune Scribe was the very first to crawl from the roots and saps of the Ritualism Tree. Although she was not born alone, she was certainly different from her brothers and sisters. Runes covered their bodies, while none apparently were found on her. Of course, her help was greatly needed in the war just as much as every other Guardian, but as time passed she was viewed as less significant than the rest of her people. A weak link perhaps, who truly knew? Oddly enough, the only thing Scribes didn't study were themselves, at least not in depth. Perhaps that was their greatest weakness?<br><br>
+Anxious to know why she was made differently, Rune spends most of her time wandering existence in search of answers. Who designed her? Why like this?
+</div>
+<div id="tab2">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/lBcRxmn.png"/>
+</div>
+
+<div id="tab3">
+<h1>Culture & Customs</h1>
+<b>Democracy</b><br>
+As hinted at before, while the Scribes appear very close to human, aside from tiny differences in appearance and racial abilities the most defining thing about them is their base nature. They believe in duty before self, blood of others before blood of their own. Those with power do not tend to abuse power, and most of them do not crave violence or war. Together they have created the perfect system of government; a democracy of sorts. Their people elect their own leader strictly by vote, this leader cannot make any big actions without the approval of the people. While this title is known as "King" or "Queen" it only lasts until either that individual dies or the people believe someone else would do a better job.<br><br>
+<b>Representer</b><br>
+In order to protect their leaders and their people from massacre or war, whenever important meetings ensue and Scribes are expected to be present, they send one individual to represent the entire Tribe. Currently, Rune Scribe is the elected Representer, and she will continue to be until either death or someone else is deemed more fit for the part.<br><br>
+<b>Eye Runes</b><br>
+It is very common for a Scribe to either be born with runes all over their body, or to add them later on. These runes can be whatever they desire and do not have to be permanent. There are a specific kind of rune that is permanent and tattoo'd on a very sensitive part of the body; the eyes. Scribes have pupils, but they are the same color as the surrounding iris so they cannot be seen. To make them "visible," Scribes will put their ranks or societal jobs on this part of their eye. (For example, a writer will have a pen-shaped rune or a book-shaped rune etched into their eye.)<br><br>
+<b>Desire</b><br>
+While romance is certainly a common thing in their culture, the more important your job is to society and the more powerful you are, the more attractive you are. Physical appearance and attributes aren't important, neither is gender.<br><br>
+<b>Power</b><br>
+Rank is not necessarily power. As the Firstborn, Rune is very high ranked and holds a place of honor among the Scribes. However, she does not hold a lot of power over society.
+</div>
+<div id="tab4">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/O5K6tFe.png"/>
+</div>
+
+<div id="tab5">
+<h1>Scribe Racial Abilities</h1>
+<b>Enhanced Senses</b><br>
+The five natural senses of sight, touch, taste, feel, and hearing, are twice as strong as that of a human's for most Scribes, but Rune has only worked to keep her sight and hearing in check. Touch, taste, and feel have faded back to that of a normal human's capabilities, while her sight and hearing have remained superior.<br><br>
+<b>Muscle Mass</b><br>
+Muscle Mass A Scribe's muscles are triple the strength of a human's, and twice as durable/tough. Should muscles be damaged, they will take twice as long to heal naturally as they would a human. <br><br>
+<b>Bone Density</b><br>
+To make up for the added weight and strain her muscles would have on her natural make-up, her bones have become as tough as iron.<br><br>
+<b>Flexibility</b><br>
+The average flexibility of a Scribe equals that of a professional human gymnast.<br><br>
+<b>Aging</b><br>
+Scribes stop aging when they reach the peak physical and mental maturity. They can die from all natural causes except aging.<br><br>
+<b>Mana Sensitivity</b><br>
+With a bit of focus, Scribes can detect mana when it is imbued into something. For example, a rune or an enchanted item. Raw mana that hasn't been given intent or hasn't been attached to something specifically cannot be sensed very well. Rune is now a rather high ranking member within her own race and can unlock this natural ability's full potential. For her to be able to detect signatures like this, she must be within a ten foot radius of them and actually be actively focusing on the mana. Just passing through or by without a second thought will not allow her to obtain any sensory cues. While in that 10 foot radius, she can only notice and trace active mana signatures coming from ACTIVE mana based objects. What this means is that any enchantments, artifacts, or aoe/aura based spells that she can sense must be actively being used for her to sense them. This includes artifacts and enchantments that are passive, but still do something -- for example, scrying equipment etc. An artifact/enchantment that is not being used at all can't be sensed. The only exception for this rule is runes themselves. Rune can notice non active runes within the 10 foot radius of herself. All of these spells (of any tree) must be under her rank to be noticed. 
+<br><br>
+<h1>Sentient Rune Racials (Becoming the Medium)</h1>
+<b>Open Canvas</b><br>
+While passive, when her True Practitioner racials lie dormant and aren't in use, Rune's appearance does not change. Her flesh stays inked in the various runic symbols that are still permanent spells waiting to be activated. However, as becoming a literal manifestation of her Ritualism magic, the ink is easily moved and manipulated. She can move its location, shape, etc, beneath and through her skin as she pleases, allowing her to create various spells (only ones currently available to her, even if she does not naturally have permanent ones on her skin) that might not normally be there as well as pictures, words, and various other visuals. When not intentionally using this strange ability, the ink will return to its proper natural place.
+<br><br>
+<b>Fusion Benefits: Carving Fingers</b><br>
+Rather than abandon her Runic Pen (High Mage Medium), her body absorbed it entirely and took on quite a few of its special traits. Rune can grow out a fingernail (only one at a time, in a matter of seconds) to act as a small and sharp diamond blade, used mostly for carving or drawing various designs in hard surfaces. She can also push her raw mana through her fingertips to solidify it into ink-like constructs, allowing her to draw runes in the air. (Construct durabilities are Diamond, always requires two posts to cast intended spell if drawn in the air, one to create and a second to activate. Can only draw up to two runes at once as Rune only has two hands.)
+<br><br>
+<b>Red Entity</b><br>
+Rune's body has gained the ability to become a literal manifestation of her mana, allowing her to shed her physical form to achieve this form. Nothing more than a translucent silhouette of pure mana and energy, allowing her to be completely unaffected by nonmagic physical objects, but very vulnerable to magic, especially magic designed to wear away or eat at other magic. The runic tattoos under her skin become solid diamond constructs that still cling brightly to her frame, and if activated in this form runes that typically require more than one post (or abilities that require multiple posts after activation to fully activate) have their casting times shortened to one singular rotation. 
+<br>
+It is much easier to burn more dangerously through her mana in this form at a much faster rate, and is very physically taxing if used for extended periods of time. If she desires, small individual sections of her body can take this form (slowly) for a lower energy and strain cost, but no rotations are taken off her spells unless her full body engages this form.
+</div>
+<div id="tab6">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/Dp9Azf6.png"/>
+</div>
+
+<div id="tab7">
+<h1>Mana's Manifestation</h1>
+Every living thing has mana, whether they realize it or not, and whether they can actually access it or not. For each living being, mana manifests in their bodies in different ways. For some, whenever they dip into it, it creates auras of visible color around their body.
+<br><br>
+<b>Rune's Aura</b><br>
+Her mana manifests as a soft red in color.<br>
+<i>"Red is the color of fire and blood, so it is associated with energy, war, danger, strength, power, determination as well as passion, desire, and love."</i>
+<br><br>
+<h1>Universal Spells</h1>
+Rune has attended almost every major class, and has gathered many different spells from various teachers around campus. To find the Universals she can use (all the ones listed aside from Mana Graft) as well as their own descriptions, click <a target="_blank" href="https://tyler-fowlow96.wixsite.com/spellbook">this link</a>.
+</div>
+<div id="tab8">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/2uiIShP.jpg"/>
+</div>
+
+<div id="tab9">
+<h1>Ritualism; True Practitioner</h1>
+<i>"Magic which recreates several forms of magic by imbuing Words of Power with Mana in the form of inscribed runic symbols. A mage of this tree may harness any tree of magic, but only in its lesser forms. A jack of all trades, ace of none tree, runes may be created for singular use (such as powerful explosions or traps), or cast upon an object to provide a spell of multiple uses (although the rune must be re-carved from time to time). Although this tree may start off as inherently weak, it's sheer utility and flexible spell roster make it an excellent choice for a well rounded mage. "</i><br><br>
+<b>Smoke Bomb!</b><br>
+This rune, when activated, will burst into a bright flash of light, then thick smoke will pour out from it until a fifteen foot radius of where the rune was is covered in a heavy fog. While the flash of light cannot cause complete blindness, it will cause momentary obstruction of vision after its initial release. <br><br>
+<b>Spitting Shards</b><br>
+This rune acts as a tiny grenade that explodes with the force of a regular grenade one post after activation. The force of the explosion will send pieces of metal shrapnel to fly at high enough speeds to cut through flesh burst from the center in all directions.<br><br>
+<b>Mimic Shield</b><br>
+When activating this rune, a transluscent film of her mana forms around her body much like a full-body suit. This shield of sorts is designed to absorb the force used in the attack against it, and return the source of force back in its original direction of trajectory with twice the original force (doubled force only applies to lower ranked attacks, specifically projectiles) it applied to the barrier. The durability and reflective ability of this barrier are two separate entities, allowing it to still be active at diamond toughness after reflecting a singular attack of equal rank. (Upon activating, this can reflect a singular attack before becoming a base bodily shield. Attacks of up to High Duo / High Auror / High Arch will be deflected, and then the barrier will turn to a diamond grade defense. Attacks from other True Practs will simply destroy the barrier without allowing for it to be reflected, however. It will still defend against the attack. Keep in mind this means fully upgraded attacks from a true pract, not just any spell they use.) This spell also works as protection against airborn nonphysical substances, like gaseous spells and the like, allowing her to easily pass through harmful substances of lower rank without breathing it in or taking it in her pores, etc. (Passing through hostile gas / potions / etc. will be defended against for one post + every rank above she is of the caster. If she gets hit by a gas spell from a high archmage, she may remain around the gas/liquid/aura/etc. for 2 post rotations before the barrier is destroyed. Regular archmage = 3, high mage = 4 etc. A true practs “gas” or other type of non projectile/aura will only be able to be defended against for 1 post rotation.)<br>
+For an extra cost of mana (and an extra rotation) the Mimic Shield can live up to its name and create a copy of its master, and without a sensory spell that would show the copy has no mana pool of its own (of any rank) the two would be indistinguishable from one another. Destroying the copy will deactivate the entire spell, but it does have the same tier of the same barrier active on its body, that is also diamond in durability and can reflect one attack of equal rank (or more of lower rank depending on the spell) in the same fashion. This "clone" is able to move as the caster does in ways that the caster desires (As long as it is the main focus of her concentration/mental capacity. The more things Rune does, the harder it is to control the clone smoothly, causing it to become visibly more mechanic and move less gracefully, etc.), but cannot use any spells, and can only remain active as long as it is within eighty feet of the caster.<br>
+While the base spell can be held up as long as she desires (so long as she has mana to feed it) the clone can only remain active for four rotations and requires two cool down rotations before it can be used again.<br>
+The sigil that creates this entire spell is permanently tattooed into the back of Rune's neck.<br><br>
+<b>Whipping Cream</b><br>
+A rune that causes whatever it is placed on to grow an extended flexible five foot limb with a harsh tip designed for whipping. <br><br>
+<b>Bear Trap</b><br>
+To activate this rune, foreign pressure must be applied. The rune acts as a bear trap, sending diamond teeth clamping closed around whatever applied said pressure. The physical part of the spell is only a distraction, as two magical barriers that can be anywhere from two to ten feet in height and width, will snap together against whatever is caught in the physical trap. The walls of force are strong enough to warp through things of tungsten durability and below. When placed on nonmagical items and awaiting for prey to fall into their traps, Bear Trap runes are undetectable by any means unless mages of High Mage rank (or above) use sensory spells with the intent of detecting them. They can only remain active so long as the caster is within ninety feet of them.<br>
+Rune has two permanent versions of this spell etched into both of her palms. Should she push mana into the tattoos and apply external pressure to their places on her hands, smaller versions of the bear traps will latch onto whatever caused the external force. When using this updated permanent version, she can release the snapping walls of force when she pleases so long as the rune is still active and they haven't been used yet, and in this case they'd only be able to be up to five feet in length and width at the most.<br><br>
+<b>Fire Spray</b><br>
+Six seconds after activation, this rune will start to spew a thick white mist. While it's not enough to heavily obstruct vision, any bare flesh the mist comes in contact with will feel as though it's burning. If inhaled not only will it continue the burning sensation inside the body, but it will also actually cause minor acidic burn damage. The mist can only reach a ten foot radius away from the initial rune it comes from, and lasts for three posts before dissipating.<br><br>
+<b>Thick Skull</b><br>
+This rune forms a very hard outer layer over whatever it is attached to when activated and only lasts for six posts. This outer layer's size is limited to up to twenty feet in height, twenty feet in width, and at an extra cost of mana can even grow twenty feet thick. When thickening the spell, she can manipulate various sections to lengthen on their own, opening up the possibility of creating sharp spikes (or all kinds of designs and offensive variations) over the surface area of the spell. While she can still carve this rune into other nonmagical objects, permanent versions are tattooed across the knuckles of both of her hands. The construct in its entirety can have a durability of up to Diamond, and when used to its full extent is very heavy.<br><br>
+<b>Sneaky Snake</b><br>
+This rune is a permanent rune that must be re-activated each time it is used. Its effect only works on sentient beings, and it simply mutes all natural and lower ranking non-magic based noise within a ten foot radius of itself upon activation. Only lasts for five posts and has a two post cool down in addition. She has this one carved into her left calve.<br><br>
+<b>Ritualist's Pane (Mana Pane Upgrade)</b><br>
+A permanent rune that cannot be drawn or engraved on other objects, the only versions of it that work are all on her body. There are a total of four of these runes in existence--one on each limb--but she can only have two active at one time. When feeding this rune mana in order to activate it, it will form a thin glass-like translucent pane two inches away from where the rune is positioned on the body. The pane can only be up to six feet in height and four feet in width, and acts like a barrier or magic shield with a toughness grade of Tungsten. Once the pane is formed and active, it can be telepathically controlled by the caster to float around their body, but it cannot move more than two inches away from their flesh. To activate--and keep activated--these spells will drain a considerable amount of her mana, so while it's possible to sustain them for more than a few moments, it's better off if they're used as little possible and for as short of a time as she can muster.<br><br>
+<b>Eyes Wide Shut (Mana Scouter Upgrade)</b><br>
+A personalized upgrade to Mana Scouter via Ritualism, this particular rune is tatooed onto the caster's eyelids. Designed to look like eyes, they activate when the caster's eyes are closed, using both symbolism and magic to personify the "eyes open even when closed" idea. This spell allows the caster to see mana pools around them (even when hidden if spells used to hide the mana pool's presence are of lower rank this spell will still see through) and determine ranks or paths based on size and power, reveal how much there is left in the tank, as well as show active and dormant mana signatures (if magic is imbued into various objects like enchantments or other runes, etc).<br>
+This spell can only be activated when the eyes are closed, and is intended to be used in short bursts. Too many present mana pools looked at through this spell at once, as well as those higher ranking or much larger than her own, can trigger overstimulation and stun the caster, causing headaches and nausea. Narrowing in on a singular signature among many is possible, and easier on the mana drain as well as the mind, but takes a lot of focus and direct concentration, leaving her vulnerable to the unseen.<br><br>
+<b>Tree Guardian</b><br>
+Once a Scribe reaches the highest rank in their path of choice, they go through a ritual to have runes tattooed directly onto their eyeballs, right over their pupils (since their pupils are colored the same as their irises, from a distance it looks normal, but close observation reveals the "pupil" to be a symbolic design). These are intended to be active spells, with their own traits and abilities. In Rune's case, they release beams of pure destructive energy (including burn damage), one from each pupil.<br> 
+In its base form and power level, the beams can only melt through magic and nonmagic substances of steel, but if a rotation is spent absorbing energy projectiles (of equal-to-lower rank, excluding fellow True Practs) to be converted into energy for the beams to use, they then engage their second stage, easily shoot out in constant streams fifteen feet long and strong enough to melt through titanium. The second stage lasts for ten rotations, before reverting to the first stage.<br>
+The strongest the beams can possibly be is melt through things of diamond durability and reach lengths of twenty-five feet away. To reach this "stage 3," the beams must once again absorb energy projectiles at some point during stage 2 (absorbing is done by hitting them directly with the beams, can only absorb one projectile at a time, must be pure energy. This means pure energy is excluded from the toughness scales, anything of equal or lower rank--excluding fellow True Practs--can be absorbed). Stage 3 lasts for five rotations before reverting to stage 2, where she will have a chance to gain stage 3 again but instead of ten rotations, this time it only lasts five. Waiting beyond those five will revert her back to stage 1.<br>
+(When stage 3 is active, beams can no longer absorb pure energy.)
+<br><br>
+<b>D.A.N.K.</b><br>
+A network of four runes that have a single ability if used individually, and a single ability if used altogether at once (this means the exact same ability is shared by all four, they do not vary).<br>
+Tattooed permanently onto four different parts of the caster's body (palms and the bottoms of her feet), the symbol CAN be recreated off of her body but she prefers to have them as is. When one is activated, it will create a blast of energy 15x15ft large with a  maximum range of 50 feet, firing outwards from the body and destroying up to diamond grade materials within the course of a basic impact. This wave of force is easily visible by targets and moves relatively slow compared to most high speed projectiles, making it a great coverage spell but not exactly an assassinating strike unless used in a blindside. (Only one at a time or all four at a time can be activated, no variation in between.)<br>
+Should all four be activated at the same time they will quadruple the caster's physical and mental speeds (x4, with an upper cap of x6) as well as coat the caster in a thick aura (that extends out from their body in every direction for five feet) of highly pressurized air capable of suspending one attack of equal rank (non charged) and two of post high mage rank 1 in the aura, not destroying the attacks/spells but holding them still (allowing additional effects to still be used by the enemy mage if the suspended spell has any). Anything of a lesser durability than Tungsten that enters the field will be completely demolished by the high pressure. This can remain active for four rotations (very high mana cost to keep up for all four. Should the ability that requires all four runes be activated, any form of the spell will require a four rotation cooldown before it can be used again.
+</div>
+<div id="tab10">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/CW8KfBq.jpg"/>
+</div>
+
+<div id="tab11">
+<h1>Equipment</h1>
+<b>Light Armor</b><br>
+Rune generally wears light sets of leather armor mixed with minimal iron plating that are designed to cling tightly to her body to allow as much movement and keep her as light weight as possible. Often worn with hints of red cloth or material to accentuate her defining color into her armor, the sets often appear very similar in build and aesthetic to the image provided.
+<br><br>
+<b>Omnic Scroll Of Wrapping</b><br>
+An Omnic scroll of deception which depicts a cloudy aura that coats the mana pool. While this aura is active, any sensory spells of expert mage or below designed to detect rankings will be ineffective at providing proper information, as if the true power of the mage had been wrapped behind something else. This works on non-upgraded mana scouter spells as well, assuming the user still has over half their mana pool.
+<br><br>
+<h1>Weapons</h1>
+<b>Dagger (x2)</b><br>
+Two identical daggers sit in their own sheathes either strapped to her thighs or her hips depending on her attire. Their three inch hilts are made of solid carved stone, wrapped in thick leather to make them easier to grip. The six inch blades are curved extensions of thick sharpened glass. The inside of the curve is serrated while the outside is smooth.
+</div>
+<div id="tab12">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/EFcbVz2.png"/>
+</div>
