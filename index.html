@@ -1,279 +1,1220 @@
+<script language=javascript>document.title=("ᴛʜᴇ sᴄʀɪʙᴇ")</script>
+
+<script>resizeTo(screen.availWidth, screen.availHeight);</script>
+
 <style>
+
 body{
 background-image: url('') !important; 
-background-repeat:repeat !important; 
+background-repeat:no-repeat !important; 
 background-position:center !important; 
-background-size:contain;
-background-color:#e6d3cc;
+background-size:cover;
+background-color:#000000;
 }
-::-webkit-scrollbar {width: 5px; height: 5px;}
+
+::-webkit-scrollbar {width: 4px; height: 4px;}
 ::-webkit-scrollbar-track {background: none;}
-::-webkit-scrollbar-thumb {background: #e6d3cc;}
+::-webkit-scrollbar-thumb {background: #302529;}
+
+#biggestbox {
+position:absolute;
+width:100%;
+height:100%;
+top:0%;
+left:0%;
+}
+
 #line1 {
 position:absolute;
-background-color:#ffffff;
-width:0.2%;
-height:100%;
-left:25%;
-top:0%;
+border-left:4px solid #F23F42;
+height:89%;
+top:5%;
+left:20%;
 }
-#line2 {
+
+#pic1 {
 position:absolute;
-background-color:#ffffff;
-width:100%;
-height:0.35%;
-left:0%;
-top:23%;
-}
-#line3 {
-position:absolute;
-background-color:#ffffff;
-width:100%;
-height:0.45%;
-left:0%;
-top:77%;
-}
-#title {
-position:absolute;
-width:25%;
-height:10%;
-top:13%;
-left:75%;
-text-align:center;
-font-size:500%;
-font-color:#ffffff;
-font-family:Unica One;
-}
-#picbox {
-position:absolute;
-border:1px solid #ffffff;
-width:20%;
-height:50%;
-top:25%;
-left:15%;
-background-image: url('https://i.imgur.com/eD79iMk.jpg') !important; 
+border:4px solid #F23F42;
+background-color:#261B1F;
+border-radius:100%;
+width:8%;
+height:16%;
+top:5%;
+left:16%;
+background-image: url('https://i.imgur.com/KupAR2r.jpg') !important; 
 background-repeat:no-repeat !important; 
 background-position:center !important; 
 background-size:cover;
-}
-#content {
-position:absolute;
-overflow:auto;
-border:1px solid #ffffff;
-background-color:#f5e1da;
-padding:2%;
-width:35%;
-height:41.7%;
-top:25%;
-left:45%;
-color:#000000;
-font-family:Amaranth;
-font-size:80%;
-}
-#tabbox1 {
-position:absolute;
-border:1px solid #ffffff;
-border-radius:100%;
-width:3.75%;
-height:7.5%;
-left:38%;
-top:24.5%;
-background-image: url('https://i.imgur.com/Ybw0HBr.png') !important; 
-background-repeat:no-repeat !important; 
-background-position:center !important; 
-background-size:cover;
-}
-#tabbox2 {
-position:absolute;
-border:1px solid #ffffff;
-border-radius:100%;
-width:3.75%;
-height:7.5%;
-left:38%;
-top:33%;
-background-image: url('https://i.imgur.com/4aAVGzz.png') !important; 
-background-repeat:no-repeat !important; 
-background-position:center !important; 
-background-size:cover;
-}
-#tabbox3 {
-position:absolute;
-border:1px solid #ffffff;
-border-radius:100%;
-width:3.75%;
-height:7.5%;
-left:38%;
-top:41.5%;
-background-image: url('https://i.imgur.com/bhjNhsH.png') !important; 
-background-repeat:no-repeat !important; 
-background-position:center !important; 
-background-size:cover;
-}
-#tabbox4 {
-position:absolute;
-border:1px solid #ffffff;
-border-radius:100%;
-width:3.75%;
-height:7.5%;
-left:38%;
-top:50%;
-background-image: url('https://i.imgur.com/IuP8mdP.png') !important; 
-background-repeat:no-repeat !important; 
-background-position:center !important; 
-background-size:cover;
-}
-#tabbox5 {
-position:absolute;
-border:1px solid #ffffff;
-border-radius:100%;
-width:3.75%;
-height:7.5%;
-left:38%;
-top:58.5%;
-background-image: url('https://i.imgur.com/miQVYmY.png') !important; 
-background-repeat:no-repeat !important; 
-background-position:center !important; 
-background-size:cover;
-}
-#tabbox6 {
-position:absolute;
-border:1px solid #ffffff;
-border-radius:100%;
-width:3.75%;
-height:7.5%;
-left:38%;
-top:67%;
-background-image: url('https://i.imgur.com/JbjlFpm.png') !important; 
-background-repeat:no-repeat !important; 
-background-position:center !important; 
-background-size:cover;
-}
-.tabs{
-display:block;
-border-radius:100%;
-opacity:0;
-padding:2%;
-width:96%;
-height:96%;
-text-align:center;
-color:#ffffff;
-font-family:Amaranth;
-font-size:100%;
-background-color:#222222;
 -webkit-transition: all 0.8s ease-out;
 -moz-transition: all 0.8s ease-out;
 transition: all 0.8s ease-out;
 }
-.tabs:hover {
+
+#smallpic1 {
+position:absolute;
+border:4px solid #F23F42;
+background-color:#261B1F;
+border-radius:100%;
+width:4%;
+height:8%;
+top:9%;
+left:18%;
+text-align:center;
+font-size:4vh;
+font-family: 'Comfortaa', cursive;
+color:#FFFFFF;
+line-height:2;
+}
+
+#descriptor1 {
+position:absolute;
+background-color:#222222;
+padding:1%;
+opacity:0;
+width:16%;
+height:13%;
+top:5%;
+left:25%;
+text-align:justify;
+font-size:1.3vh;
+font-family: 'Comfortaa', cursive;
+color:#FFFFFF;
+line-height:1.8;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#pic1:hover + #descriptor1 {
 opacity:1;
 -webkit-transition: all 0.8s ease-out;
 -moz-transition: all 0.8s ease-out;
 transition: all 0.8s ease-out;
 }
-#tab1,#tab2,#tab3,#tab4,#tab5,#tab6,#tab7,#tab8,#tab9,#tab10,#tab11,#tab12 {
-display: none;
+
+#pic2 {
+position:absolute;
+border:4px solid #F23F42;
+background-color:#261B1F;
+border-radius:100%;
+opacity:0;
+width:8%;
+height:16%;
+top:23%;
+left:16%;
+background-image: url('https://i.imgur.com/DCoNgSp.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
 }
-i {
-color:#cf3a3a;
-font-size:100%;
-}
-a {
-color:#cf3a3a;
-}
-h1 {
-color: #444444;
-letter-spacing:3px;
-font-family: Unica One;
+
+#smallpic2 {
+position:absolute;
+border:4px solid #F23F42;
+background-color:#261B1F;
+border-radius:100%;
+width:4%;
+height:8%;
+top:27%;
+left:18%;
 text-align:center;
-font-size: 90%;
+font-size:4vh;
+font-family: 'Comfortaa', cursive;
+color:#FFFFFF;
+line-height:2;
 }
+
+#descriptor2 {
+position:absolute;
+background-color:#222222;
+padding:1%;
+opacity:0;
+width:16%;
+height:13%;
+top:23%;
+left:25%;
+text-align:justify;
+font-size:1.3vh;
+font-family: 'Comfortaa', cursive;
+color:#FFFFFF;
+line-height:1.8;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#pic2:hover {
+opacity:1;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#pic2:hover + #descriptor2 {
+opacity:1;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#pic3 {
+position:absolute;
+border:4px solid #F23F42;
+background-color:#261B1F;
+border-radius:100%;
+opacity:0;
+width:8%;
+height:16%;
+top:41%;
+left:16%;
+background-image: url('https://i.imgur.com/kPxaM5h.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:top !important; 
+background-size:cover;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#smallpic3 {
+position:absolute;
+border:4px solid #F23F42;
+background-color:#261B1F;
+border-radius:100%;
+width:4%;
+height:8%;
+top:45%;
+left:18%;
+text-align:center;
+font-size:4vh;
+font-family: 'Comfortaa', cursive;
+color:#FFFFFF;
+line-height:2;
+}
+
+#descriptor3 {
+position:absolute;
+background-color:#222222;
+padding:1%;
+opacity:0;
+width:16%;
+height:13%;
+top:41%;
+left:25%;
+text-align:justify;
+font-size:1.3vh;
+font-family: 'Comfortaa', cursive;
+color:#FFFFFF;
+line-height:1.8;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#pic3:hover {
+opacity:1;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#pic3:hover + #descriptor3 {
+opacity:1;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#pic4 {
+position:absolute;
+border:4px solid #F23F42;
+background-color:#261B1F;
+border-radius:100%;
+opacity:0;
+width:8%;
+height:16%;
+top:59%;
+left:16%;
+background-image: url('https://i.imgur.com/BdQP337.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#smallpic4 {
+position:absolute;
+border:4px solid #F23F42;
+background-color:#261B1F;
+border-radius:100%;
+width:4%;
+height:8%;
+top:63%;
+left:18%;
+text-align:center;
+font-size:4vh;
+font-family: 'Comfortaa', cursive;
+color:#FFFFFF;
+line-height:2;
+}
+
+#descriptor4 {
+position:absolute;
+background-color:#222222;
+padding:1%;
+opacity:0;
+width:16%;
+height:13%;
+top:59%;
+left:25%;
+text-align:justify;
+font-size:1.3vh;
+font-family: 'Comfortaa', cursive;
+color:#FFFFFF;
+line-height:1.8;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#pic4:hover {
+opacity:1;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#pic4:hover + #descriptor4 {
+opacity:1;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#pic5 {
+position:absolute;
+border:4px solid #F23F42;
+background-color:#261B1F;
+border-radius:100%;
+opacity:0;
+width:8%;
+height:16%;
+top:77%;
+left:16%;
+background-image: url('https://i.imgur.com/BoM6wHE.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:top !important; 
+background-size:cover;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#smallpic5 {
+position:absolute;
+border:4px solid #F23F42;
+background-color:#261B1F;
+border-radius:100%;
+width:4%;
+height:8%;
+top:81%;
+left:18%;
+text-align:center;
+font-size:4vh;
+font-family: 'Comfortaa', cursive;
+color:#FFFFFF;
+line-height:2;
+}
+
+#descriptor5 {
+position:absolute;
+background-color:#222222;
+padding:1%;
+opacity:0;
+width:16%;
+height:13%;
+top:77%;
+left:25%;
+text-align:justify;
+font-size:1.3vh;
+font-family: 'Comfortaa', cursive;
+color:#FFFFFF;
+line-height:1.8;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#pic5:hover {
+opacity:1;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#pic5:hover + #descriptor5 {
+opacity:1;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#content {
+position:absolute;
+background-color:#0A0A0A;
+padding:1%;
+overflow:auto;
+width:20%;
+height:85%;
+top:5%;
+left:44%;
+color:#FFFFFF;
+font-size:1.2vh;
+text-align:justify;
+font-family: 'Noto Serif', serif;
+}
+
+#pic6 {
+position:absolute;
+width:18%;
+height:26%;
+top:5%;
+left:67%;
+}
+
+#pic7 {
+position:absolute;
+width:8.75%;
+height:26%;
+top:32%;
+left:67%;
+}
+
+#pic8 {
+position:absolute;
+width:8.75%;
+height:26%;
+top:32%;
+left:76.25%;
+}
+
+#pic9 {
+position:absolute;
+width:18%;
+height:35%;
+top:59%;
+left:67%;
+}
+
+#rune {
+position:absolute;
+width:18%;
+height:55%;
+top:5%;
+left:25%;
+background-image: url('https://i.imgur.com/821lxjG.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:100% 100%;
+}
+
+#stat1title {
+position:absolute;
+background-color:#261B1F;
+width:4%;
+height:4%;
+top:70%;
+left:25%;
+text-align:center;
+font-family: 'Teko', sans-serif;
+text-transform:uppercase;
+color:#F23F42;
+font-size:1.8vh;
+line-height:2.4;
+}
+
+#stat1 {
+position:absolute;
+background-color:#1C1115;
+width:5%;
+height:4%;
+top:70%;
+left:29%;
+text-align:center;
+font-family: 'Comfortaa', cursive;
+color:#666666;
+font-size:1.2vh;
+line-height:3.5;
+}
+
+#stat2title {
+position:absolute;
+background-color:#261B1F;
+width:4%;
+height:4%;
+top:75%;
+left:25%;
+text-align:center;
+font-family: 'Teko', sans-serif;
+text-transform:uppercase;
+color:#F23F42;
+font-size:1.8vh;
+line-height:2.4;
+}
+
+#stat2 {
+position:absolute;
+background-color:#1C1115;
+width:5%;
+height:4%;
+top:75%;
+left:29%;
+text-align:center;
+font-family: 'Comfortaa', cursive;
+color:#666666;
+font-size:1.2vh;
+line-height:3.5;
+}
+
+#stat3title {
+position:absolute;
+background-color:#261B1F;
+width:4%;
+height:4%;
+top:80%;
+left:25%;
+text-align:center;
+font-family: 'Teko', sans-serif;
+text-transform:uppercase;
+color:#F23F42;
+font-size:1.8vh;
+line-height:2.4;
+}
+
+#stat3 {
+position:absolute;
+background-color:#1C1115;
+width:5%;
+height:4%;
+top:80%;
+left:29%;
+text-align:center;
+font-family: 'Comfortaa', cursive;
+color:#666666;
+font-size:1.2vh;
+line-height:3.5;
+}
+
+#stat4title {
+position:absolute;
+background-color:#261B1F;
+width:4%;
+height:4%;
+top:85%;
+left:25%;
+text-align:center;
+font-family: 'Teko', sans-serif;
+text-transform:uppercase;
+color:#F23F42;
+font-size:1.8vh;
+line-height:2.4;
+}
+
+#stat4 {
+position:absolute;
+background-color:#1C1115;
+width:5%;
+height:4%;
+top:85%;
+left:29%;
+text-align:center;
+font-family: 'Comfortaa', cursive;
+color:#666666;
+font-size:1.2vh;
+line-height:3.5;
+}
+
+#stat5title {
+position:absolute;
+background-color:#261B1F;
+width:4%;
+height:4.25%;
+top:90%;
+left:25%;
+text-align:center;
+font-family: 'Teko', sans-serif;
+text-transform:uppercase;
+color:#F23F42;
+font-size:1.8vh;
+line-height:2.4;
+}
+
+#stat5 {
+position:absolute;
+background-color:#1C1115;
+width:5%;
+height:4.25%;
+top:90%;
+left:29%;
+text-align:center;
+font-family: 'Comfortaa', cursive;
+color:#666666;
+font-size:1.2vh;
+line-height:3.5;
+}
+
+#stat6title {
+position:absolute;
+background-color:#261B1F;
+width:4%;
+height:4%;
+top:70%;
+left:34%;
+text-align:center;
+font-family: 'Teko', sans-serif;
+text-transform:uppercase;
+color:#F23F42;
+font-size:1.8vh;
+line-height:2.4;
+}
+
+#stat6 {
+position:absolute;
+background-color:#1C1115;
+width:5%;
+height:4%;
+top:70%;
+left:38%;
+text-align:center;
+font-family: 'Comfortaa', cursive;
+color:#666666;
+font-size:1.2vh;
+line-height:3.5;
+}
+
+#stat7title {
+position:absolute;
+background-color:#261B1F;
+width:4%;
+height:4%;
+top:75%;
+left:34%;
+text-align:center;
+font-family: 'Teko', sans-serif;
+text-transform:uppercase;
+color:#F23F42;
+font-size:1.8vh;
+line-height:2.4;
+}
+
+#stat7 {
+position:absolute;
+background-color:#1C1115;
+width:5%;
+height:4%;
+top:75%;
+left:38%;
+text-align:center;
+font-family: 'Comfortaa', cursive;
+color:#666666;
+font-size:1.2vh;
+line-height:3.5;
+}
+
+#stat8title {
+position:absolute;
+background-color:#261B1F;
+width:4%;
+height:4%;
+top:80%;
+left:34%;
+text-align:center;
+font-family: 'Teko', sans-serif;
+text-transform:uppercase;
+color:#F23F42;
+font-size:1.8vh;
+line-height:2.4;
+}
+
+#stat8 {
+position:absolute;
+background-color:#1C1115;
+width:5%;
+height:4%;
+top:80%;
+left:38%;
+text-align:center;
+font-family: 'Comfortaa', cursive;
+color:#666666;
+font-size:1.2vh;
+line-height:3.5;
+}
+
+#stat9title {
+position:absolute;
+background-color:#261B1F;
+width:4%;
+height:4%;
+top:85%;
+left:34%;
+text-align:center;
+font-family: 'Teko', sans-serif;
+text-transform:uppercase;
+color:#F23F42;
+font-size:1.8vh;
+line-height:2.4;
+}
+
+#stat9 {
+position:absolute;
+background-color:#1C1115;
+width:5%;
+height:4%;
+top:85%;
+left:38%;
+text-align:center;
+font-family: 'Comfortaa', cursive;
+color:#666666;
+font-size:1.2vh;
+line-height:3.5;
+}
+
+#stat10title {
+position:absolute;
+background-color:#261B1F;
+width:4%;
+height:4.25%;
+top:90%;
+left:34%;
+text-align:center;
+font-family: 'Teko', sans-serif;
+text-transform:uppercase;
+color:#F23F42;
+font-size:1.8vh;
+line-height:2.4;
+}
+
+#stat10 {
+position:absolute;
+background-color:#1C1115;
+width:5%;
+height:4.25%;
+top:90%;
+left:38%;
+text-align:center;
+font-family: 'Comfortaa', cursive;
+color:#666666;
+font-size:1.2vh;
+line-height:3.5;
+}
+
+#title {
+position:absolute;
+width:18%;
+height:8%;
+top:61%;
+left:25%;
+text-align:center;
+font-size:4vh;
+color:#666666;
+font-family: 'Sofia', cursive;
+letter-spacing:2px;
+line-height:2.1;
+}
+
+#pic1copy1 {
+position:absolute;
+border:4px solid #F23F42;
+background-color:#261B1F;
+border-radius:100%;
+opacity:0;
+width:8%;
+height:16%;
+top:5%;
+left:16%;
+background-image: url('https://i.imgur.com/KupAR2r.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#pic1copy1:hover {
+opacity:1;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#pic1copy1:hover + #descriptor1 {
+opacity:1;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#pic2copy1 {
+position:absolute;
+border:4px solid #F23F42;
+background-color:#261B1F;
+border-radius:100%;
+width:8%;
+height:16%;
+top:23%;
+left:16%;
+background-image: url('https://i.imgur.com/DCoNgSp.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#pic2copy1:hover + #descriptor2 {
+opacity:1;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#pic3copy1 {
+position:absolute;
+border:4px solid #F23F42;
+background-color:#261B1F;
+border-radius:100%;
+width:8%;
+height:16%;
+top:41%;
+left:16%;
+background-image: url('https://i.imgur.com/kPxaM5h.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:top !important; 
+background-size:cover;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#pic3copy1:hover + #descriptor3 {
+opacity:1;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#pic4copy1 {
+position:absolute;
+border:4px solid #F23F42;
+background-color:#261B1F;
+border-radius:100%;
+width:8%;
+height:16%;
+top:59%;
+left:16%;
+background-image: url('https://i.imgur.com/BdQP337.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#pic4copy1:hover + #descriptor4 {
+opacity:1;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#pic5copy1 {
+position:absolute;
+border:4px solid #F23F42;
+background-color:#261B1F;
+border-radius:100%;
+width:8%;
+height:16%;
+top:77%;
+left:16%;
+background-image: url('https://i.imgur.com/BoM6wHE.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:top !important; 
+background-size:cover;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#pic5copy1:hover + #descriptor5 {
+opacity:1;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tab1,#tab2,#tab3,#tab4,#tab5 {
+display:none;
+}
+
+.tabs {
+display:block;
+width:100%;
+height:100%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+a {
+color:#999999;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+a:hover {
+color:#FF0000;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+i {
+color:#888888;
+}
+
+h1 {
+color: #FF0000;
+font-family: 'Sofia', cursive;
+text-align:center;
+font-size: 2.5vh;
+border-bottom: 4px solid #F23F42;
+}
+
 b {
-font-size: 80%;
-color:#cf3a3a;
-font-family:Unica One;
+color:#FF0000;
+font-size:1.8vh;
+text-transform: uppercase;
+font-family: 'Teko', sans-serif;
 }
+
 </style>
 
-<style type="text/css">body, a:hover {cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur817.cur), progress !important;}</style>
-<link href="https://fonts.googleapis.com/css?family=Amaranth|Unica+One" rel="stylesheet">
-<script>function changeNavigation(id) {document.getElementById('content').innerHTML=document.getElementById(id).innerHTML}</script>
-<script>function changeNavigation1(id) {document.getElementById('picbox').innerHTML=document.getElementById(id).innerHTML}</script>
+<style type="text/css">* {cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur822.cur), auto !important;}</style>
+<link href="https://fonts.googleapis.com/css?family=Comfortaa|Noto+Serif|Sofia|Teko" rel="stylesheet">
+<script>function changeNavigation(id) {document.getElementById('biggestbox').innerHTML=document.getElementById(id).innerHTML}</script>
 
-<div id="line1">
+<div id="biggestbox">
+
+<div id="pic6">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/IviHrgS.png"/>
 </div>
-<div id="line2">
+<div id="pic7">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/uSLPlC1.png"/>
 </div>
-<div id="line3">
+<div id="pic8">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/YOnAXYh.png"/>
 </div>
-<div id="picbox">
+<div id="pic9">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/QQqnHkk.png"/>
 </div>
+
 <div id="content">
-<h1>Basic Information</h1>
-<b>Name:</b> Rune<br>
-<b>True Age:</b> Immortal<br>
-<b>Physical Age:</b> Late Twenties<br>
-<b>Gender:</b> Female<br>
-<b>Species:</b> Tree Guardian<br>
-<b>Race:</b> Scribe<br>
-<b>Occupation:</b> Student at <a target="_blank" href="http://ulreich.weebly.com">Ulreich University</a><br>
-<b>Magic Tree:</b> Ritualism<br>
-<b>Tree Rank:</b> True Practitioner<br>
-<b>Height:</b> 5'7"<br>
-<b>Weight:</b> 130 lbs.<br><br>
-<h1>Detailed Information</h1>
-<b>Physical Attributes</b><br>
-Rune has a very specific <i>body type</i>. She's pretty average in height when compared to human females. Her skin always carries a nice olive tanned tint, revealing her Spanish "heritage." While she is thin and definitely feminine in shape (hourglass figure, defined bust and rear, etc.) layers of hard muscle underline her smooth skin, giving her dainty feminine look a more tough and weathered appearance. Her <i>facial structure</i> is just as specific as her body type. Her head is oval shaped, and her chin sharp and defined. High cheekbones are evident but not overly pronounced, giving her rounded rosy cheeks a softer look. Her nose is average in size and shape while the lips that rest underneath are full and as rosy as her cheeks. Thin black brows and thick black lashes accent wide narrow eyes, which would look pretty humanistic if it wasn't for the unaturally cyan hue of her irises and strange pupils--which are there but aren't visible. Her <i>hair</i> is yet another subject that demands attention. While it is obvious she hasn't had a haircut in ages based around the length of her hair and its varying lengths in different areas, the hair from her scalp to her shoulders is a dark raven black, anything that has grown beyond that is a rosy red. Well, mostly red, save for the odd streaks of black that cut through it. No, not common streaks, these black strands go in every direction possible: sideways, diagnol, straight, etc. Should she decide to style her hair, put it up, whatever, the black streaks will form actual runes. Her hair is all natural, she didn't color it this way.
+<h1>Physical Attributes</h1>
+Rune has a very specific <i>body type</i>. She's pretty average in height when compared to human females. Her skin always carries a nice olive tanned tint, revealing her Spanish "heritage." While she is thin and definitely feminine in shape (hourglass figure, defined bust and rear, etc.) layers of hard muscle underline her smooth skin, giving her dainty feminine look a more tough and weathered appearance. Her <i>facial structure</i> is just as specific as her body type. Her head is oval shaped, and her chin sharp and defined. High cheekbones are evident but not overly pronounced, giving her rounded rosy cheeks a softer look. Her nose is average in size and shape while the lips that rest underneath are full and as rosy as her cheeks. Thin black brows and thick black lashes accent wide narrow eyes, which would look pretty humanistic if it wasn't for the unaturally cyan hue of her irises and strange pupils--which are there but aren't visible. Her <i>hair</i> is yet another subject that demands attention. While it is obvious she hasn't had a haircut in ages based around the length of her hair and its varying lengths in different areas, the hair from her scalp to her shoulders is a dark raven black, anything that has grown beyond that is a crimson red. Well, mostly red, save for the odd streaks of black that cut through it. No, not common streaks, these black strands go in every direction possible: sideways, diagnol, straight, etc. Should she decide to style her hair, put it up, whatever, the black streaks will form actual runes. Her hair is all natural, she didn't color it this way.
 <br><br>
-<b>Attire</b><br>
+<h1>Attire</h1>
 Her <i>clothing will vary</i>  based on what culture she is currently in. As a representer for the Scribes, it is in her duty to know the culture of a place and the generally accepted customs of clothing so she will not offend. The clothing shown in provided images is usually only worn if she is home among other Scribes.
 <br><br>
-<b>Personality</b><br>
+<h1>Personality</h1>
 All her life, Rune has had to be a politician, and even more so an actress. While her true nature is yet to be seen, it is clearly easy for her to study her surroundings and adapt her personality entirely to fit how she wants to be seen. Should she be backed into a corner or feel an overwhelming amount of pressure, there is a high chance she'll snap and reveal her true nature; a trained weapon waiting to be used to its full potential.
 </div>
 
-<div id="tabbox1">
-<span class="tabs" onClick="changeNavigation ('tab1');changeNavigation1 ('tab2')">1</span>
+<div id="rune"></div>
+<div id="stat1title">
+Name:
 </div>
-<div id="tabbox2">
-<span class="tabs" onClick="changeNavigation ('tab3');changeNavigation1 ('tab4')">2</span>
+<div id="stat1">
+Rune
 </div>
-<div id="tabbox3">
-<span class="tabs" onClick="changeNavigation ('tab5');changeNavigation1 ('tab6')">3</span>
+<div id="stat2title">
+P. Age:
 </div>
-<div id="tabbox4">
-<span class="tabs" onClick="changeNavigation ('tab7');changeNavigation1 ('tab8')">4</span>
+<div id="stat2">
+Late Twenties
 </div>
-<div id="tabbox5">
-<span class="tabs" onClick="changeNavigation ('tab9');changeNavigation1 ('tab10')">5</span>
+<div id="stat3title">
+Gender:
 </div>
-<div id="tabbox6">
-<span class="tabs" onClick="changeNavigation ('tab11');changeNavigation1 ('tab12')">6</span>
+<div id="stat3">
+Female
+</div>
+<div id="stat4title">
+Species:
+</div>
+<div id="stat4">
+Guardian
+</div>
+<div id="stat5title">
+Height:
+</div>
+<div id="stat5">
+5'7"
+</div>
+<div id="stat6title">
+Petname:
+</div>
+<div id="stat6">
+Red
+</div>
+<div id="stat7title">
+T. Age:
+</div>
+<div id="stat7">
+Immortal
+</div>
+<div id="stat8title">
+S.O.:
+</div>
+<div id="stat8">
+Pansexual
+</div>
+<div id="stat9title">
+Race:
+</div>
+<div id="stat9">
+Scribe
+</div>
+<div id="stat10title">
+Weight:
+</div>
+<div id="stat10">
+130 lbs.
+</div>
+<div id="title">
+The <FONT COLOR="#F23F42">Red</FONT> Scribe
 </div>
 
-<div id="title">
-The Scribe
+<div id="line1"></div>
+<div id="smallpic1">
+❤
+</div>
+<div id="pic1">
+<span class="tabs" onClick="changeNavigation ('tab1')"></span>
+</div>
+<div id="descriptor1">
+This tab contains <FONT COLOR="#F23F42">Detailed Information</FONT> about the character's general <FONT COLOR="#666666">appearance</FONT> and <FONT COLOR="#666666">mindset</FONT>. In order to learn about more than what is described direct interaction with her is suggested.
+</div>
+<div id="smallpic2">
+R
+</div>
+<div id="pic2">
+<span class="tabs" onClick="changeNavigation ('tab2')"></span>
+</div>
+<div id="descriptor2">
+This tab contains <FONT COLOR="#F23F42">Lore Information</FONT> about some of the character's <FONT COLOR="#666666">backstory</FONT> and <FONT COLOR="#666666">customs</FONT> surrounding the <FONT COLOR="#666666">culture</FONT> of their unique race. In order to learn about more than what is described direct interaction with her is suggested.
+</div>
+<div id="smallpic3">
+U
+</div>
+<div id="pic3">
+<span class="tabs" onClick="changeNavigation ('tab3')"></span>
+</div>
+<div id="descriptor3">
+This tab contains <FONT COLOR="#F23F42">Ability Information</FONT> about the character's <FONT COLOR="#666666">racials</FONT> and the <FONT COLOR="#666666">Universal Spells</FONT> they have learned over the course of their career. Everything listed here works exactly as described, but this is not common In Character knowledge.
+</div>
+<div id="smallpic4">
+N
+</div>
+<div id="pic4">
+<span class="tabs" onClick="changeNavigation ('tab4')"></span>
+</div>
+<div id="descriptor4">
+This tab contains <FONT COLOR="#F23F42">Magic Information</FONT> about the character's <FONT COLOR="#666666">rank</FONT>, <FONT COLOR="#666666">magic tree</FONT>, and their <FONT COLOR="#666666">spells</FONT> they have developed. Everything listed here works exactly as described, but this is not common In Character knowledge.
+</div>
+<div id="smallpic5">
+E
+</div>
+<div id="pic5">
+<span class="tabs" onClick="changeNavigation ('tab5')"></span>
+</div>
+<div id="descriptor5">
+This tab contains <FONT COLOR="#F23F42">Inventory Information</FONT> about the character's <FONT COLOR="#666666">tools</FONT> and <FONT COLOR="#666666">weapons</FONT> contained in their personal and private arsenal. Everything listed here works exactly as described, but this is not common In Character knowledge.
+</div>
+
 </div>
 
 <div id="tab1">
-<h1>History & Lore</h1>
-In the beginning when humans first began roaming the Earth, their gods banded together and agreed to make special trees with magical properties and spread them throughout the lands in hidden places so humans would have to undergo trials to find them. It didn't take long for human Tribes and Families to find these trees and occupy the surrounding lands, thankful to the gods for giving them such special gifts.
-<br><br>
-Each tree came with specific instructions of use and care, otherwise they would cause great damage to both the humans and their own lands. For quite some time the humans kept peace with the gods and used the trees as instructed. Unfortunately, greed, the lust for power, and the lust for knowledge drove them to disobey the instructions of their gods. They began to misuse the trees for their own selfish gain.
-<br><br>
-Angered, the gods warned the humans that if they would not stop, they would be forced to stop. The humans, of course, did not believe. So the gods created Guardians out of the sap of each Magic Tree. The Guardians were powerful formiddable foes that stood between the humans and their abused gifts. Spiteful, the humans declared War on these Guardians and tried to kill them off. The Tree Guardians formed the Tree Alliance and worked together to win the War, hiding their trees from human eyes and banishing human blood from their soil forever.
-<br><br>
-Of all these Trees, Ritualism birthed one of the most progressive groups. This offspring was closest to the humans in appearance, and farthest in nature. They called themselves Scribes; readers and writers of an ancient magic language, and were very proud of their duty. While the first generation was born with a subconscious knowledge of how to fabricate runes that they were able to tap into with time, it was their job to pass on the knowledge to their descendants. The first generation was bred for war, the later generations were bred for studying, making philosophers, writers, and inventors.<br><br>
-Rune Scribe was the very first to crawl from the roots and saps of the Ritualism Tree. Although she was not born alone, she was certainly different from her brothers and sisters. Runes covered their bodies, while none apparently were found on her. Of course, her help was greatly needed in the war just as much as every other Guardian, but as time passed she was viewed as less significant than the rest of her people. A weak link perhaps, who truly knew? Oddly enough, the only thing Scribes didn't study were themselves, at least not in depth. Perhaps that was their greatest weakness?<br><br>
-Anxious to know why she was made differently, Rune spends most of her time wandering existence in search of answers. Who designed her? Why like this?
+
+<div id="pic6">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/IviHrgS.png"/>
 </div>
-<div id="tab2">
-<img style="width:100%;height:100%;" src="https://i.imgur.com/lBcRxmn.png"/>
+<div id="pic7">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/uSLPlC1.png"/>
+</div>
+<div id="pic8">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/YOnAXYh.png"/>
+</div>
+<div id="pic9">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/QQqnHkk.png"/>
 </div>
 
-<div id="tab3">
+<div id="content">
+<h1>Physical Attributes</h1>
+Rune has a very specific <i>body type</i>. She's pretty average in height when compared to human females. Her skin always carries a nice olive tanned tint, revealing her Spanish "heritage." While she is thin and definitely feminine in shape (hourglass figure, defined bust and rear, etc.) layers of hard muscle underline her smooth skin, giving her dainty feminine look a more tough and weathered appearance. Her <i>facial structure</i> is just as specific as her body type. Her head is oval shaped, and her chin sharp and defined. High cheekbones are evident but not overly pronounced, giving her rounded rosy cheeks a softer look. Her nose is average in size and shape while the lips that rest underneath are full and as rosy as her cheeks. Thin black brows and thick black lashes accent wide narrow eyes, which would look pretty humanistic if it wasn't for the unaturally cyan hue of her irises and strange pupils--which are there but aren't visible. Her <i>hair</i> is yet another subject that demands attention. While it is obvious she hasn't had a haircut in ages based around the length of her hair and its varying lengths in different areas, the hair from her scalp to her shoulders is a dark raven black, anything that has grown beyond that is a crimson red. Well, mostly red, save for the odd streaks of black that cut through it. No, not common streaks, these black strands go in every direction possible: sideways, diagnol, straight, etc. Should she decide to style her hair, put it up, whatever, the black streaks will form actual runes. Her hair is all natural, she didn't color it this way.
+<br><br>
+<h1>Attire</h1>
+Her <i>clothing will vary</i>  based on what culture she is currently in. As a representer for the Scribes, it is in her duty to know the culture of a place and the generally accepted customs of clothing so she will not offend. The clothing shown in provided images is usually only worn if she is home among other Scribes.
+<br><br>
+<h1>Personality</h1>
+All her life, Rune has had to be a politician, and even more so an actress. While her true nature is yet to be seen, it is clearly easy for her to study her surroundings and adapt her personality entirely to fit how she wants to be seen. Should she be backed into a corner or feel an overwhelming amount of pressure, there is a high chance she'll snap and reveal her true nature; a trained weapon waiting to be used to its full potential.
+</div>
+
+<div id="rune"></div>
+<div id="stat1title">
+Name:
+</div>
+<div id="stat1">
+Rune
+</div>
+<div id="stat2title">
+P. Age:
+</div>
+<div id="stat2">
+Late Twenties
+</div>
+<div id="stat3title">
+Gender:
+</div>
+<div id="stat3">
+Female
+</div>
+<div id="stat4title">
+Species:
+</div>
+<div id="stat4">
+Guardian
+</div>
+<div id="stat5title">
+Height:
+</div>
+<div id="stat5">
+5'7"
+</div>
+<div id="stat6title">
+Petname:
+</div>
+<div id="stat6">
+Red
+</div>
+<div id="stat7title">
+T. Age:
+</div>
+<div id="stat7">
+Immortal
+</div>
+<div id="stat8title">
+S.O.:
+</div>
+<div id="stat8">
+Pansexual
+</div>
+<div id="stat9title">
+Race:
+</div>
+<div id="stat9">
+Scribe
+</div>
+<div id="stat10title">
+Weight:
+</div>
+<div id="stat10">
+130 lbs.
+</div>
+<div id="title">
+The <FONT COLOR="#F23F42">Red</FONT> Scribe
+</div>
+
+<div id="line1"></div>
+<div id="smallpic1">
+❤
+</div>
+<div id="pic1">
+<span class="tabs" onClick="changeNavigation ('tab1')"></span>
+</div>
+<div id="descriptor1">
+This tab contains <FONT COLOR="#F23F42">Detailed Information</FONT> about the character's general <FONT COLOR="#666666">appearance</FONT> and <FONT COLOR="#666666">mindset</FONT>. In order to learn about more than what is described direct interaction with her is suggested.
+</div>
+<div id="smallpic2">
+R
+</div>
+<div id="pic2">
+<span class="tabs" onClick="changeNavigation ('tab2')"></span>
+</div>
+<div id="descriptor2">
+This tab contains <FONT COLOR="#F23F42">Lore Information</FONT> about some of the character's <FONT COLOR="#666666">backstory</FONT> and <FONT COLOR="#666666">customs</FONT> surrounding the <FONT COLOR="#666666">culture</FONT> of their unique race. In order to learn about more than what is described direct interaction with her is suggested.
+</div>
+<div id="smallpic3">
+U
+</div>
+<div id="pic3">
+<span class="tabs" onClick="changeNavigation ('tab3')"></span>
+</div>
+<div id="descriptor3">
+This tab contains <FONT COLOR="#F23F42">Ability Information</FONT> about the character's <FONT COLOR="#666666">racials</FONT> and the <FONT COLOR="#666666">Universal Spells</FONT> they have learned over the course of their career. Everything listed here works exactly as described, but this is not common In Character knowledge.
+</div>
+<div id="smallpic4">
+N
+</div>
+<div id="pic4">
+<span class="tabs" onClick="changeNavigation ('tab4')"></span>
+</div>
+<div id="descriptor4">
+This tab contains <FONT COLOR="#F23F42">Magic Information</FONT> about the character's <FONT COLOR="#666666">rank</FONT>, <FONT COLOR="#666666">magic tree</FONT>, and their <FONT COLOR="#666666">spells</FONT> they have developed. Everything listed here works exactly as described, but this is not common In Character knowledge.
+</div>
+<div id="smallpic5">
+E
+</div>
+<div id="pic5">
+<span class="tabs" onClick="changeNavigation ('tab5')"></span>
+</div>
+<div id="descriptor5">
+This tab contains <FONT COLOR="#F23F42">Inventory Information</FONT> about the character's <FONT COLOR="#666666">tools</FONT> and <FONT COLOR="#666666">weapons</FONT> contained in their personal and private arsenal. Everything listed here works exactly as described, but this is not common In Character knowledge.
+</div>
+
+</div>
+
+<div id="tab2">
+
+<div id="pic6">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/KIH6vbd.png"/>
+</div>
+<div id="pic7">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/r7E9A4R.png"/>
+</div>
+<div id="pic8">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/jDlzpQH.png"/>
+</div>
+<div id="pic9">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/iSnG7se.png"/>
+</div>
+
+<div id="content">
+<h1>Rune's History (Pre-Ulreich)</h1>
+Undergoing updates and reconstruction.
+<br><br>
+<h1>So Far ... (Post-Ulreich)</h1>
+Undergoing updates and reconstruction.
+<br><br>
 <h1>Culture & Customs</h1>
-<b>Democracy</b><br>
-As hinted at before, while the Scribes appear very close to human, aside from tiny differences in appearance and racial abilities the most defining thing about them is their base nature. They believe in duty before self, blood of others before blood of their own. Those with power do not tend to abuse power, and most of them do not crave violence or war. Together they have created the perfect system of government; a democracy of sorts. Their people elect their own leader strictly by vote, this leader cannot make any big actions without the approval of the people. While this title is known as "King" or "Queen" it only lasts until either that individual dies or the people believe someone else would do a better job.<br><br>
 <b>Representer</b><br>
 In order to protect their leaders and their people from massacre or war, whenever important meetings ensue and Scribes are expected to be present, they send one individual to represent the entire Tribe. Currently, Rune Scribe is the elected Representer, and she will continue to be until either death or someone else is deemed more fit for the part.<br><br>
 <b>Eye Runes</b><br>
@@ -281,13 +1222,139 @@ It is very common for a Scribe to either be born with runes all over their body,
 <b>Desire</b><br>
 While romance is certainly a common thing in their culture, the more important your job is to society and the more powerful you are, the more attractive you are. Physical appearance and attributes aren't important, neither is gender.<br><br>
 <b>Power</b><br>
-Rank is not necessarily power. As the Firstborn, Rune is very high ranked and holds a place of honor among the Scribes. However, she does not hold a lot of power over society.
-</div>
-<div id="tab4">
-<img style="width:100%;height:100%;" src="https://i.imgur.com/O5K6tFe.png"/>
+Rank is not necessarily power. As the first Scribe to exist, Rune is very high ranked and holds a place of honor among her people. However, she does not hold a lot of power or authority over society.
 </div>
 
-<div id="tab5">
+<div id="rune"></div>
+<div id="stat1title">
+Name:
+</div>
+<div id="stat1">
+Rune
+</div>
+<div id="stat2title">
+P. Age:
+</div>
+<div id="stat2">
+Late Twenties
+</div>
+<div id="stat3title">
+Gender:
+</div>
+<div id="stat3">
+Female
+</div>
+<div id="stat4title">
+Species:
+</div>
+<div id="stat4">
+Guardian
+</div>
+<div id="stat5title">
+Height:
+</div>
+<div id="stat5">
+5'7"
+</div>
+<div id="stat6title">
+Petname:
+</div>
+<div id="stat6">
+Red
+</div>
+<div id="stat7title">
+T. Age:
+</div>
+<div id="stat7">
+Immortal
+</div>
+<div id="stat8title">
+S.O.:
+</div>
+<div id="stat8">
+Pansexual
+</div>
+<div id="stat9title">
+Race:
+</div>
+<div id="stat9">
+Scribe
+</div>
+<div id="stat10title">
+Weight:
+</div>
+<div id="stat10">
+130 lbs.
+</div>
+<div id="title">
+The <FONT COLOR="#F23F42">Red</FONT> Scribe
+</div>
+
+<div id="line1"></div>
+<div id="smallpic1">
+R
+</div>
+<div id="pic1copy1">
+<span class="tabs" onClick="changeNavigation ('tab1')"></span>
+</div>
+<div id="descriptor1">
+This tab contains <FONT COLOR="#F23F42">Detailed Information</FONT> about the character's general <FONT COLOR="#666666">appearance</FONT> and <FONT COLOR="#666666">mindset</FONT>. In order to learn about more than what is described direct interaction with her is suggested.
+</div>
+<div id="smallpic2">
+❤
+</div>
+<div id="pic2copy1">
+<span class="tabs" onClick="changeNavigation ('tab2')"></span>
+</div>
+<div id="descriptor2">
+This tab contains <FONT COLOR="#F23F42">Lore Information</FONT> about some of the character's <FONT COLOR="#666666">backstory</FONT> and <FONT COLOR="#666666">customs</FONT> surrounding the <FONT COLOR="#666666">culture</FONT> of their unique race. In order to learn about more than what is described direct interaction with her is suggested.
+</div>
+<div id="smallpic3">
+U
+</div>
+<div id="pic3">
+<span class="tabs" onClick="changeNavigation ('tab3')"></span>
+</div>
+<div id="descriptor3">
+This tab contains <FONT COLOR="#F23F42">Ability Information</FONT> about the character's <FONT COLOR="#666666">racials</FONT> and the <FONT COLOR="#666666">Universal Spells</FONT> they have learned over the course of their career. Everything listed here works exactly as described, but this is not common In Character knowledge.
+</div>
+<div id="smallpic4">
+N
+</div>
+<div id="pic4">
+<span class="tabs" onClick="changeNavigation ('tab4')"></span>
+</div>
+<div id="descriptor4">
+This tab contains <FONT COLOR="#F23F42">Magic Information</FONT> about the character's <FONT COLOR="#666666">rank</FONT>, <FONT COLOR="#666666">magic tree</FONT>, and their <FONT COLOR="#666666">spells</FONT> they have developed. Everything listed here works exactly as described, but this is not common In Character knowledge.
+</div>
+<div id="smallpic5">
+E
+</div>
+<div id="pic5">
+<span class="tabs" onClick="changeNavigation ('tab5')"></span>
+</div>
+<div id="descriptor5">
+This tab contains <FONT COLOR="#F23F42">Inventory Information</FONT> about the character's <FONT COLOR="#666666">tools</FONT> and <FONT COLOR="#666666">weapons</FONT> contained in their personal and private arsenal. Everything listed here works exactly as described, but this is not common In Character knowledge.
+</div>
+
+</div>
+
+<div id="tab3">
+
+<div id="pic6">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/FuOWM4L.png"/>
+</div>
+<div id="pic7">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/UCY5o4o.png"/>
+</div>
+<div id="pic8">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/yO88NGv.png"/>
+</div>
+<div id="pic9">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/0nSBVyw.png"/>
+</div>
+
+<div id="content">
 <h1>Scribe Racial Abilities</h1>
 <b>Enhanced Senses</b><br>
 The five natural senses of sight, touch, taste, feel, and hearing, are twice as strong as that of a human's for most Scribes, but Rune has only worked to keep her sight and hearing in check. Touch, taste, and feel have faded back to that of a normal human's capabilities, while her sight and hearing have remained superior.<br><br>
@@ -302,7 +1369,7 @@ Scribes stop aging when they reach the peak physical and mental maturity. They c
 <b>Mana Sensitivity</b><br>
 With a bit of focus, Scribes can detect mana when it is imbued into something. For example, a rune or an enchanted item. Raw mana that hasn't been given intent or hasn't been attached to something specifically cannot be sensed very well. Rune is now a rather high ranking member within her own race and can unlock this natural ability's full potential. For her to be able to detect signatures like this, she must be within a ten foot radius of them and actually be actively focusing on the mana. Just passing through or by without a second thought will not allow her to obtain any sensory cues. While in that 10 foot radius, she can only notice and trace active mana signatures coming from ACTIVE mana based objects. What this means is that any enchantments, artifacts, or aoe/aura based spells that she can sense must be actively being used for her to sense them. This includes artifacts and enchantments that are passive, but still do something -- for example, scrying equipment etc. An artifact/enchantment that is not being used at all can't be sensed. The only exception for this rule is runes themselves. Rune can notice non active runes within the 10 foot radius of herself. All of these spells (of any tree) must be under her rank to be noticed. 
 <br><br>
-<h1>Sentient Rune Racials (Becoming the Medium)</h1>
+<h1>Sentient Rune Racials</h1>
 <b>Open Canvas</b><br>
 While passive, when her True Practitioner racials lie dormant and aren't in use, Rune's appearance does not change. Her flesh stays inked in the various runic symbols that are still permanent spells waiting to be activated. However, as becoming a literal manifestation of her Ritualism magic, the ink is easily moved and manipulated. She can move its location, shape, etc, beneath and through her skin as she pleases, allowing her to create various spells (only ones currently available to her, even if she does not naturally have permanent ones on her skin) that might not normally be there as well as pictures, words, and various other visuals. When not intentionally using this strange ability, the ink will return to its proper natural place.
 <br><br>
@@ -313,12 +1380,7 @@ Rather than abandon her Runic Pen (High Mage Medium), her body absorbed it entir
 Rune's body has gained the ability to become a literal manifestation of her mana, allowing her to shed her physical form to achieve this form. Nothing more than a translucent silhouette of pure mana and energy, allowing her to be completely unaffected by nonmagic physical objects, but very vulnerable to magic, especially magic designed to wear away or eat at other magic. The runic tattoos under her skin become solid diamond constructs that still cling brightly to her frame, and if activated in this form runes that typically require more than one post (or abilities that require multiple posts after activation to fully activate) have their casting times shortened to one singular rotation. 
 <br>
 It is much easier to burn more dangerously through her mana in this form at a much faster rate, and is very physically taxing if used for extended periods of time. If she desires, small individual sections of her body can take this form (slowly) for a lower energy and strain cost, but no rotations are taken off her spells unless her full body engages this form.
-</div>
-<div id="tab6">
-<img style="width:100%;height:100%;" src="https://i.imgur.com/Dp9Azf6.png"/>
-</div>
-
-<div id="tab7">
+<br><br>
 <h1>Mana's Manifestation</h1>
 Every living thing has mana, whether they realize it or not, and whether they can actually access it or not. For each living being, mana manifests in their bodies in different ways. For some, whenever they dip into it, it creates auras of visible color around their body.
 <br><br>
@@ -329,13 +1391,139 @@ Her mana manifests as a soft red in color.<br>
 <h1>Universal Spells</h1>
 Rune has attended almost every major class, and has gathered many different spells from various teachers around campus. To find the Universals she can use (all the ones listed aside from Mana Graft) as well as their own descriptions, click <a target="_blank" href="https://tyler-fowlow96.wixsite.com/spellbook">this link</a>.
 </div>
-<div id="tab8">
-<img style="width:100%;height:100%;" src="https://i.imgur.com/2uiIShP.jpg"/>
+
+<div id="rune"></div>
+<div id="stat1title">
+Name:
+</div>
+<div id="stat1">
+Rune
+</div>
+<div id="stat2title">
+P. Age:
+</div>
+<div id="stat2">
+Late Twenties
+</div>
+<div id="stat3title">
+Gender:
+</div>
+<div id="stat3">
+Female
+</div>
+<div id="stat4title">
+Species:
+</div>
+<div id="stat4">
+Guardian
+</div>
+<div id="stat5title">
+Height:
+</div>
+<div id="stat5">
+5'7"
+</div>
+<div id="stat6title">
+Petname:
+</div>
+<div id="stat6">
+Red
+</div>
+<div id="stat7title">
+T. Age:
+</div>
+<div id="stat7">
+Immortal
+</div>
+<div id="stat8title">
+S.O.:
+</div>
+<div id="stat8">
+Pansexual
+</div>
+<div id="stat9title">
+Race:
+</div>
+<div id="stat9">
+Scribe
+</div>
+<div id="stat10title">
+Weight:
+</div>
+<div id="stat10">
+130 lbs.
+</div>
+<div id="title">
+The <FONT COLOR="#F23F42">Red</FONT> Scribe
 </div>
 
-<div id="tab9">
+<div id="line1"></div>
+<div id="smallpic1">
+R
+</div>
+<div id="pic1copy1">
+<span class="tabs" onClick="changeNavigation ('tab1')"></span>
+</div>
+<div id="descriptor1">
+This tab contains <FONT COLOR="#F23F42">Detailed Information</FONT> about the character's general <FONT COLOR="#666666">appearance</FONT> and <FONT COLOR="#666666">mindset</FONT>. In order to learn about more than what is described direct interaction with her is suggested.
+</div>
+<div id="smallpic2">
+U
+</div>
+<div id="pic2">
+<span class="tabs" onClick="changeNavigation ('tab2')"></span>
+</div>
+<div id="descriptor2">
+This tab contains <FONT COLOR="#F23F42">Lore Information</FONT> about some of the character's <FONT COLOR="#666666">backstory</FONT> and <FONT COLOR="#666666">customs</FONT> surrounding the <FONT COLOR="#666666">culture</FONT> of their unique race. In order to learn about more than what is described direct interaction with her is suggested.
+</div>
+<div id="smallpic3">
+❤
+</div>
+<div id="pic3copy1">
+<span class="tabs" onClick="changeNavigation ('tab3')"></span>
+</div>
+<div id="descriptor3">
+This tab contains <FONT COLOR="#F23F42">Ability Information</FONT> about the character's <FONT COLOR="#666666">racials</FONT> and the <FONT COLOR="#666666">Universal Spells</FONT> they have learned over the course of their career. Everything listed here works exactly as described, but this is not common In Character knowledge.
+</div>
+<div id="smallpic4">
+N
+</div>
+<div id="pic4">
+<span class="tabs" onClick="changeNavigation ('tab4')"></span>
+</div>
+<div id="descriptor4">
+This tab contains <FONT COLOR="#F23F42">Magic Information</FONT> about the character's <FONT COLOR="#666666">rank</FONT>, <FONT COLOR="#666666">magic tree</FONT>, and their <FONT COLOR="#666666">spells</FONT> they have developed. Everything listed here works exactly as described, but this is not common In Character knowledge.
+</div>
+<div id="smallpic5">
+E
+</div>
+<div id="pic5">
+<span class="tabs" onClick="changeNavigation ('tab5')"></span>
+</div>
+<div id="descriptor5">
+This tab contains <FONT COLOR="#F23F42">Inventory Information</FONT> about the character's <FONT COLOR="#666666">tools</FONT> and <FONT COLOR="#666666">weapons</FONT> contained in their personal and private arsenal. Everything listed here works exactly as described, but this is not common In Character knowledge.
+</div>
+
+</div>
+
+<div id="tab4">
+
+<div id="pic6">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/XL4nMDi.png"/>
+</div>
+<div id="pic7">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/8lPQ0Gt.png"/>
+</div>
+<div id="pic8">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/izygycl.png"/>
+</div>
+<div id="pic9">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/stkW91Z.png"/>
+</div>
+
+<div id="content">
 <h1>Ritualism; True Practitioner</h1>
-<i>"Magic which recreates several forms of magic by imbuing Words of Power with Mana in the form of inscribed runic symbols. A mage of this tree may harness any tree of magic, but only in its lesser forms. A jack of all trades, ace of none tree, runes may be created for singular use (such as powerful explosions or traps), or cast upon an object to provide a spell of multiple uses (although the rune must be re-carved from time to time). Although this tree may start off as inherently weak, it's sheer utility and flexible spell roster make it an excellent choice for a well rounded mage. "</i><br><br>
+<i>"Magic which recreates several forms of magic by imbuing Words of Power with Mana in the form of inscribed runic symbols. A mage of this tree may harness any tree of magic, but only in its lesser forms. A jack of all trades, ace of none tree, runes may be created for singular use (such as powerful explosions or traps), or cast upon an object to provide a spell of multiple uses (although the rune must be re-carved from time to time). Although this tree may start off as inherently weak, it's sheer utility and flexible spell roster make it an excellent choice for a well rounded mage."</i><br><br>
 <b>Smoke Bomb!</b><br>
 This rune, when activated, will burst into a bright flash of light, then thick smoke will pour out from it until a fifteen foot radius of where the rune was is covered in a heavy fog. While the flash of light cannot cause complete blindness, it will cause momentary obstruction of vision after its initial release. <br><br>
 <b>Spitting Shards</b><br>
@@ -372,12 +1560,139 @@ A network of four runes that have a single ability if used individually, and a s
 Tattooed permanently onto four different parts of the caster's body (palms and the bottoms of her feet), the symbol CAN be recreated off of her body but she prefers to have them as is. When one is activated, it will create a blast of energy 15x15ft large with a  maximum range of 50 feet, firing outwards from the body and destroying up to diamond grade materials within the course of a basic impact. This wave of force is easily visible by targets and moves relatively slow compared to most high speed projectiles, making it a great coverage spell but not exactly an assassinating strike unless used in a blindside. (Only one at a time or all four at a time can be activated, no variation in between.)<br>
 Should all four be activated at the same time they will quadruple the caster's physical and mental speeds (x4, with an upper cap of x6) as well as coat the caster in a thick aura (that extends out from their body in every direction for five feet) of highly pressurized air capable of suspending one attack of equal rank (non charged) and two of post high mage rank 1 in the aura, not destroying the attacks/spells but holding them still (allowing additional effects to still be used by the enemy mage if the suspended spell has any). Anything of a lesser durability than Tungsten that enters the field will be completely demolished by the high pressure. This can remain active for four rotations (very high mana cost to keep up for all four. Should the ability that requires all four runes be activated, any form of the spell will require a four rotation cooldown before it can be used again.
 </div>
-<div id="tab10">
-<img style="width:100%;height:100%;" src="https://i.imgur.com/CW8KfBq.jpg"/>
+
+<div id="rune"></div>
+<div id="stat1title">
+Name:
+</div>
+<div id="stat1">
+Rune
+</div>
+<div id="stat2title">
+P. Age:
+</div>
+<div id="stat2">
+Late Twenties
+</div>
+<div id="stat3title">
+Gender:
+</div>
+<div id="stat3">
+Female
+</div>
+<div id="stat4title">
+Species:
+</div>
+<div id="stat4">
+Guardian
+</div>
+<div id="stat5title">
+Height:
+</div>
+<div id="stat5">
+5'7"
+</div>
+<div id="stat6title">
+Petname:
+</div>
+<div id="stat6">
+Red
+</div>
+<div id="stat7title">
+T. Age:
+</div>
+<div id="stat7">
+Immortal
+</div>
+<div id="stat8title">
+S.O.:
+</div>
+<div id="stat8">
+Pansexual
+</div>
+<div id="stat9title">
+Race:
+</div>
+<div id="stat9">
+Scribe
+</div>
+<div id="stat10title">
+Weight:
+</div>
+<div id="stat10">
+130 lbs.
+</div>
+<div id="title">
+The <FONT COLOR="#F23F42">Red</FONT> Scribe
 </div>
 
-<div id="tab11">
+<div id="line1"></div>
+<div id="smallpic1">
+R
+</div>
+<div id="pic1copy1">
+<span class="tabs" onClick="changeNavigation ('tab1')"></span>
+</div>
+<div id="descriptor1">
+This tab contains <FONT COLOR="#F23F42">Detailed Information</FONT> about the character's general <FONT COLOR="#666666">appearance</FONT> and <FONT COLOR="#666666">mindset</FONT>. In order to learn about more than what is described direct interaction with her is suggested.
+</div>
+<div id="smallpic2">
+U
+</div>
+<div id="pic2">
+<span class="tabs" onClick="changeNavigation ('tab2')"></span>
+</div>
+<div id="descriptor2">
+This tab contains <FONT COLOR="#F23F42">Lore Information</FONT> about some of the character's <FONT COLOR="#666666">backstory</FONT> and <FONT COLOR="#666666">customs</FONT> surrounding the <FONT COLOR="#666666">culture</FONT> of their unique race. In order to learn about more than what is described direct interaction with her is suggested.
+</div>
+<div id="smallpic3">
+N
+</div>
+<div id="pic3">
+<span class="tabs" onClick="changeNavigation ('tab3')"></span>
+</div>
+<div id="descriptor3">
+This tab contains <FONT COLOR="#F23F42">Ability Information</FONT> about the character's <FONT COLOR="#666666">racials</FONT> and the <FONT COLOR="#666666">Universal Spells</FONT> they have learned over the course of their career. Everything listed here works exactly as described, but this is not common In Character knowledge.
+</div>
+<div id="smallpic4">
+❤
+</div>
+<div id="pic4copy1">
+<span class="tabs" onClick="changeNavigation ('tab4')"></span>
+</div>
+<div id="descriptor4">
+This tab contains <FONT COLOR="#F23F42">Magic Information</FONT> about the character's <FONT COLOR="#666666">rank</FONT>, <FONT COLOR="#666666">magic tree</FONT>, and their <FONT COLOR="#666666">spells</FONT> they have developed. Everything listed here works exactly as described, but this is not common In Character knowledge.
+</div>
+<div id="smallpic5">
+E
+</div>
+<div id="pic5">
+<span class="tabs" onClick="changeNavigation ('tab5')"></span>
+</div>
+<div id="descriptor5">
+This tab contains <FONT COLOR="#F23F42">Inventory Information</FONT> about the character's <FONT COLOR="#666666">tools</FONT> and <FONT COLOR="#666666">weapons</FONT> contained in their personal and private arsenal. Everything listed here works exactly as described, but this is not common In Character knowledge.
+</div>
+
+</div>
+
+<div id="tab5">
+
+<div id="pic6">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/CC4VxXW.png"/>
+</div>
+<div id="pic7">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/eyFZssV.png"/>
+</div>
+<div id="pic8">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/EyP12qq.png"/>
+</div>
+<div id="pic9">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/41HgBao.png"/>
+</div>
+
+<div id="content">
 <h1>Equipment</h1>
+<img align="left" style="width:50%" src="https://i.imgur.com/zRZbv2q.png"/>
 <b>Light Armor</b><br>
 Rune generally wears light sets of leather armor mixed with minimal iron plating that are designed to cling tightly to her body to allow as much movement and keep her as light weight as possible. Often worn with hints of red cloth or material to accentuate her defining color into her armor, the sets often appear very similar in build and aesthetic to the image provided.
 <br><br>
@@ -388,8 +1703,119 @@ An Omnic scroll of deception which depicts a cloudy aura that coats the mana poo
 <b>Dagger (x2)</b><br>
 Two identical daggers sit in their own sheathes either strapped to her thighs or her hips depending on her attire. Their three inch hilts are made of solid carved stone, wrapped in thick leather to make them easier to grip. The six inch blades are curved extensions of thick sharpened glass. The inside of the curve is serrated while the outside is smooth.
 </div>
-<div id="tab12">
-<img style="width:100%;height:100%;" src="https://i.imgur.com/EFcbVz2.png"/>
+
+<div id="rune"></div>
+<div id="stat1title">
+Name:
+</div>
+<div id="stat1">
+Rune
+</div>
+<div id="stat2title">
+P. Age:
+</div>
+<div id="stat2">
+Late Twenties
+</div>
+<div id="stat3title">
+Gender:
+</div>
+<div id="stat3">
+Female
+</div>
+<div id="stat4title">
+Species:
+</div>
+<div id="stat4">
+Guardian
+</div>
+<div id="stat5title">
+Height:
+</div>
+<div id="stat5">
+5'7"
+</div>
+<div id="stat6title">
+Petname:
+</div>
+<div id="stat6">
+Red
+</div>
+<div id="stat7title">
+T. Age:
+</div>
+<div id="stat7">
+Immortal
+</div>
+<div id="stat8title">
+S.O.:
+</div>
+<div id="stat8">
+Pansexual
+</div>
+<div id="stat9title">
+Race:
+</div>
+<div id="stat9">
+Scribe
+</div>
+<div id="stat10title">
+Weight:
+</div>
+<div id="stat10">
+130 lbs.
+</div>
+<div id="title">
+The <FONT COLOR="#F23F42">Red</FONT> Scribe
+</div>
+
+<div id="line1"></div>
+<div id="smallpic1">
+R
+</div>
+<div id="pic1copy1">
+<span class="tabs" onClick="changeNavigation ('tab1')"></span>
+</div>
+<div id="descriptor1">
+This tab contains <FONT COLOR="#F23F42">Detailed Information</FONT> about the character's general <FONT COLOR="#666666">appearance</FONT> and <FONT COLOR="#666666">mindset</FONT>. In order to learn about more than what is described direct interaction with her is suggested.
+</div>
+<div id="smallpic2">
+U
+</div>
+<div id="pic2">
+<span class="tabs" onClick="changeNavigation ('tab2')"></span>
+</div>
+<div id="descriptor2">
+This tab contains <FONT COLOR="#F23F42">Lore Information</FONT> about some of the character's <FONT COLOR="#666666">backstory</FONT> and <FONT COLOR="#666666">customs</FONT> surrounding the <FONT COLOR="#666666">culture</FONT> of their unique race. In order to learn about more than what is described direct interaction with her is suggested.
+</div>
+<div id="smallpic3">
+N
+</div>
+<div id="pic3">
+<span class="tabs" onClick="changeNavigation ('tab3')"></span>
+</div>
+<div id="descriptor3">
+This tab contains <FONT COLOR="#F23F42">Ability Information</FONT> about the character's <FONT COLOR="#666666">racials</FONT> and the <FONT COLOR="#666666">Universal Spells</FONT> they have learned over the course of their career. Everything listed here works exactly as described, but this is not common In Character knowledge.
+</div>
+<div id="smallpic4">
+E
+</div>
+<div id="pic4">
+<span class="tabs" onClick="changeNavigation ('tab4')"></span>
+</div>
+<div id="descriptor4">
+This tab contains <FONT COLOR="#F23F42">Magic Information</FONT> about the character's <FONT COLOR="#666666">rank</FONT>, <FONT COLOR="#666666">magic tree</FONT>, and their <FONT COLOR="#666666">spells</FONT> they have developed. Everything listed here works exactly as described, but this is not common In Character knowledge.
+</div>
+<div id="smallpic5">
+❤
+</div>
+<div id="pic5copy1">
+<span class="tabs" onClick="changeNavigation ('tab5')"></span>
+</div>
+<div id="descriptor5">
+This tab contains <FONT COLOR="#F23F42">Inventory Information</FONT> about the character's <FONT COLOR="#666666">tools</FONT> and <FONT COLOR="#666666">weapons</FONT> contained in their personal and private arsenal. Everything listed here works exactly as described, but this is not common In Character knowledge.
+</div>
+
 </div>
 
 <embed style="height: 0%; width: 0%;"src="Rune.mp3" autostart="true" loop="true">
